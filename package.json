@@ -1,0 +1,30 @@
+{
+  "name": "json-pipeline-observer",
+  "version": "1.0.0",
+  "description": "json-pipeline observation module",
+  "main": "lib/observer.js",
+  "scripts": {
+    "test": "mocha --reporter=spec test/*-test.js && jscs lib/*.js test/*.js && jshint lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indutny/json-pipeline-observer.git"
+  },
+  "keywords": [
+    "json-pipeline",
+    "observer",
+    "sea-of-nodes"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/json-pipeline-observer/issues"
+  },
+  "homepage": "https://github.com/indutny/json-pipeline-observer#readme",
+  "devDependencies": {
+    "jscs": "^2.2.0",
+    "jshint": "^2.8.0",
+    "json-pipeline": "^3.8.0",
+    "mocha": "^2.3.3"
+  }
+}
