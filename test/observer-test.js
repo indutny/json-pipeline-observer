@@ -22,7 +22,7 @@ describe('Observer', function() {
   var p;
   var o;
   beforeEach(function() {
-    p = pipeline.create();
+    p = pipeline.create('cfg');
     o = observer.create(p);
   });
 
@@ -93,6 +93,14 @@ describe('Observer', function() {
       { action: 'create', node: 1, opcode: 'other-node' },
       { action: 'changeIndex', node: 0, from: 0, to: -1 },
       { action: 'changeIndex', node: 1, from: 1, to: 0 }
+    ]);
+  });
+
+  it('should observe creation of block', function(done) {
+    p.block();
+
+    check(o, done, [
+      { action: 'create', node: 0, opcode: 'start' }
     ]);
   });
 });
