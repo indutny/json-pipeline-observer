@@ -1,6 +1,6 @@
 {
   "name": "json-pipeline-observer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "json-pipeline observation module",
   "main": "lib/observer.js",
   "scripts": {
